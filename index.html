@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/script.js" defer></script>
+</head>
+<body>
+  
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h3>My Portfolio</h3>
+      <button class="close-btn" onclick="toggleSidebar()">&#x2715;</button> 
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+
+  <header class="navbar">
+    <button class="menu-btn" onclick="toggleSidebar()">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="hero" id="hero">
+   <div class="overlay">
+    <div class="container">
+        <h4>Hello I'm</h4>
+        <h2>Millicent Benie Afful</h2>
+        <marquee behavior="" direction="">
+            <h5> /A Creative Front-End Developer specializing in modern web technologies/ </h5>
+        </marquee>
+    </div>
+   </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a passionate web developer with expertise in HTML, CSS, JavaScript, and React. 
+            I enjoy creating beautiful, functional websites and learning new technologies to continuously improve my craft.
+          </p>
+          <!-- Download CV Button -->
+          <a href="path-to-your-cv.pdf" class="download-btn" download>Download CV</a>
+        </div>
+        <!-- About Image -->
+        <div class="about-image">
+          <img src="./assets/images/about.png" alt="Your Picture">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (optional, you can add content) -->
+  <!-- <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: your-email@example.com</p>
+    </div>
+  </section> -->
+
+  <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="./assets/images/real-est.png" alt="Project 1" class="project-image">
+          <div class="project-info">
+            <h3>Real Estate Website</h3>
+            <p>Discover your dream home or investment property with our expert team. We offer a wide range of personalized knowledge.</p>
+            <a href="https://miley-afful.github.io/Real-Estate-Landing/" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="./assets/images/flw.png" alt="Project 2" class="project-image">
+          <div class="project-info">
+            <h3>Floristry Website</h3>
+            <p>From elegant bouquets to stunning centerpieces, we create personalized designs for every occasion.</p>
+            <a href="https://miley-afful.github.io/Floristry-website/" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>
+  
+        <div class="project-card">
+          <img src="./assets/images/movie.png" alt="Project 2" class="project-image">
+          <div class="project-info">
+            <h3>Movie Website</h3>
+            <p>Discover the latest films, explore hidden gems, and stay up-to-date with the movie industry.</p>
+            <a href="https://miley-afful.github.io/movie-website/" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./assets/images/ptf.png" alt="Project 2" class="project-image">
+          <div class="project-info">
+            <h3>Portfolio Trial</h3>
+            <p>The first project I built when i started my programming journey, using HTML and CSS </p>
+            <a href="https://miley-afful.github.io/Real-Estate-Landing/" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="path-to-project-image2.jpg" alt="Project 2" class="project-image">
+          <div class="project-info">
+            <h3>Project Title 2</h3>
+            <p>A short description of your project goes here. Describe the technologies used, your role, and what the project does.</p>
+            <a href="link-to-live-project2" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="path-to-project-image2.jpg" alt="Project 2" class="project-image">
+          <div class="project-info">
+            <h3>Project Title 2</h3>
+            <p>A short description of your project goes here. Describe the technologies used, your role, and what the project does.</p>
+            <a href="link-to-live-project2" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>    
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        
+        <!-- Skill 1 -->
+        <div class="skill-card">
+          <img src="./assets/images/exp.png" alt="">
+          <h3>HTML</h3>
+          <p>Proficient in creating semantic and well-structured websites using HTML5.</p>
+        </div>
+  
+        <!-- Skill 2 -->
+        <div class="skill-card">
+          <img src="./assets/images/css.png" alt="">
+          <h3>CSS</h3>
+          <p>Skilled in responsive design, Flexbox, Grid, and modern CSS3 features.</p>
+        </div>
+  
+        <!-- Skill 3 -->
+        <div class="skill-card">
+          <img src="./assets/images/js.png" alt="">
+          <h3>JavaScript</h3>
+          <p>Experienced with modern JavaScript ES6+ features and building dynamic web pages.</p>
+        </div>
+  
+        <!-- Skill 4 -->
+        <div class="skill-card">
+          <img src="./assets/images/rct.png" alt="">
+          <h3>React</h3>
+          <p>Building scalable and interactive UIs with React.js and component-based architecture.</p>
+        </div>
+  
+        <!-- Add more skills as needed -->
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+<section id="services" class="services-section">
+    <div class="container">
+      <h2>My Services</h2>
+      <div class="services-grid">
+        
+        <!-- Service 1 -->
+        <div class="service-card">
+          <img src="./assets/images/web.png" alt="Service 1" class="service-image">
+          <div class="service-info">
+            <h3>Web Development</h3>
+            <p>I build responsive and modern websites using the latest technologies such as HTML, CSS, JavaScript, and React.</p>
+          </div>
+        </div>
+  
+        <!-- Service 2 -->
+        <div class="service-card">
+          <img src="./assets/images/sec.png" alt="Service 2" class="service-image">
+          <div class="service-info">
+            <h3>Office Assistant</h3>
+            <p>Results-oriented Executive Assistant with a proven track record of streamlining operations and enhancing executive productivity</p>
+          </div>
+        </div>
+  
+        <!-- Service 3 -->
+        <div class="service-card">
+          <img src="./assets/images/consult.png" alt="Service 3" class="service-image">
+          <div class="service-info">
+            <h3>Consulting</h3>
+            <p>Providing expert advice on web development strategies, architecture, and project management.</p>
+          </div>
+        </div>
+  
+        <!-- Add more services as needed -->
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Me Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to work with me or have any questions, feel free to reach out!</p>
+      
+      <form class="contact-form"  action="https://formspree.io/f/xdkoobqa"
+      method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Millicent Benie Afful. All Rights Reserved.</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/your-profile" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+        <li><a href="https://twitter.com/your-profile" target="_blank">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+  
+
+</body>
+</html>
